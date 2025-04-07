@@ -2,10 +2,19 @@
 
 from flask import Flask, render_template, request, redirect, session, url_for
 from data import sensor_data
-from users import users, save_user
 
 app = Flask(__name__)
 app.secret_key = 'supersecretkey'  # Replace with a real key in production
+
+# Simulated users and roles stored in-memory
+users = {
+    'admin': {'password': 'admin123', 'role': 'Admin'},
+    'analyst': {'password': 'analyst123', 'role': 'Analyst'},
+    'guest': {'password': 'guest123', 'role': 'Guest'}
+}
+
+def save_user(username, password, role):
+    users[username] = {'password': password, 'role': role}
 
 @app.route('/')
 def home():
