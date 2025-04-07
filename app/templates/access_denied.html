@@ -1,12 +1,14 @@
-<!-- templates/access_denied.html -->
 <!DOCTYPE html>
 <html>
 <head>
     <title>Access Denied</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h2>Access Denied</h2>
-    <p>You do not have permission to access this page.</p>
-    <a href="/logout">Go Back</a>
+    <div class="container">
+        <h2>Access Denied</h2>
+        <p>You do not have permission to access this page.</p>
+        <a href="/">Return to Login</a>
+    </div>
 </body>
 </html>
