@@ -1,0 +1,24 @@
+# users
+
+import json
+import os
+
+USERS_FILE = 'users.json'
+
+# Load users from file or initialize default ones
+if os.path.exists(USERS_FILE):
+    with open(USERS_FILE, 'r') as f:
+        users = json.load(f)
+else:
+    users = {
+        'admin': {'password': 'admin123', 'role': 'Admin'},
+        'analyst': {'password': 'analyst123', 'role': 'Analyst'},
+        'guest': {'password': 'guest123', 'role': 'Guest'}
+    }
+    with open(USERS_FILE, 'w') as f:
+        json.dump(users, f, indent=2)
+
+def save_user(username, password, role):
+    users[username] = {'password': password, 'role': role}
+    with open(USERS_FILE, 'w') as f:
+        json.dump(users, f, indent=2)

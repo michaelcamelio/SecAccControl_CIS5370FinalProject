@@ -1,0 +1,26 @@
+<!-- templates/dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Welcome, {{ username }} ({{ role }})</h2>
+    <a href="/logout">Logout</a>
+    <h3>Sensor Data</h3>
+    <table border="1">
+        <tr>
+            <th>Timestamp</th>
+            <th>Temperature (°C)</th>
+            <th>Air Quality Index</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item.timestamp }}</td>
+            <td>{{ item.temperature }}</td>
+            <td>{{ item.air_quality }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
