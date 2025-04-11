@@ -9,7 +9,14 @@
 
 Note: Before running anything else, verify you are in the correct directory.
 
-2. Install dependencies
+2. Install 
+
+2.1 Requirements
+
+    Python 3.13.3
+    pip
+
+2.2 Dependencies
 
     pip install -r requirements.txt
 
