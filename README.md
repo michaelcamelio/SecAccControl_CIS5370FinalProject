@@ -9,26 +9,26 @@
 
 Note: Before running anything else, verify you are in the correct directory.
 
-2. Create a Virtual Enviroment (Windows)
-
-    python -m venv venv
-
-2.1 Create a Virtual Enviroment (Mac)
-
-    python3 -m venv venv
-
-3. Activate the Enviroment (Windows)
-
-    .\venv\Scripts\Activate.ps1
-
-3.1 Activate the Enviroment (Mac)
-
-    source venv/bin/activate
-    
-4. Install dependencies
+2. Install dependencies
 
     pip install -r requirements.txt
 
-3. Run the main.py
+3. Create a Virtual Enviroment (Windows)
+
+    python -m venv venv
+
+3.1 Create a Virtual Enviroment (Mac)
+
+    python3 -m venv venv
+
+4. Activate the Enviroment (Windows)
+
+    .\venv\Scripts\Activate.ps1
+
+4.1 Activate the Enviroment (Mac)
+
+    source venv/bin/activate
+
+5. Run the main.py
 
     python main.py
