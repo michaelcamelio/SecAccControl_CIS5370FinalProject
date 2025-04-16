@@ -1,41 +1,52 @@
 # Secure Access Control for Environmental Sensors
-# CIS 5370 Final Project
+Principles of Cybersecurity (CIS 5370) Final Project for Michael Camelio, Carlos Amasifuen, Isha Bhardwaj at Florida International University
+
+## Requirements
+- [Python 3.11.3 or greater](https://www.python.org/downloads/) - Our project runs on Python.
+- Pip - Pip is used to install packages for our requirements.txt
 
 ## How to Run the Project
 
 1. Clone repository:
-   
+   ```bash
     git clone https://github.com/michaelcamelio/SecAccControl_CIS5370FinalProject.git
+   ```
+   
+2. Navigate to the project folder:
+   ```bash
+   cd SecAccControl_CIS5370FinalProject
+   ```
+3. Install the packages
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Virtual Environment (Optional)
+   - **Create a Virtual Enviroment (Windows)**
+     ```bash
+     python -m venv venv
+     ```
+   - **Activate the Enviroment (Windows)**
+      ```bash
+      .\venv\Scripts\Activate.ps1
+      ```
+   - **Create a Virtual Enviroment (Mac OS)**
+     ```bash
+     python3 -m venv venv
+     ``` 
+   - **Activate the Enviroment (Mac OS)**
+      ```bash
+      source venv/bin/activate
+      ``` 
 
-Note: Before running anything else, verify you are in the correct directory.
 
-2. Install 
-
-2.1 Requirements
-
-    Python 3.13.3
-    pip
-
-2.2 Dependencies
-
-    pip install -r requirements.txt
-
-3. Create a Virtual Enviroment (Windows)
-
-    python -m venv venv
-
-3.1 Create a Virtual Enviroment (Mac)
-
-    python3 -m venv venv
-
-4. Activate the Enviroment (Windows)
-
-    .\venv\Scripts\Activate.ps1
-
-4.1 Activate the Enviroment (Mac)
-
-    source venv/bin/activate
-
-5. Run the main.py
-
-    python main.py
+5. Run the project (main.py)
+   Navigate to the app folder and run the main.py script.
+   ```bash
+   cd app
+   python main.py
+   ```
+   Your terminal should output:
+   ```bash
+   Running on http://<ip address>:<port>
+   ```
+   Visit the url to view the project running in your browser.
